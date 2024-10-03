@@ -9,7 +9,6 @@ class Mediator
     component.mediator = self
   end
 
-  # Метод для спілкування між компонентами
   def notify(sender, event)
     @components.each do |component|
       next if component == sender
