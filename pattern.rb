@@ -1,4 +1,3 @@
-# Клас Посередник
 class Mediator
   def initialize
     @components = []
@@ -17,7 +16,6 @@ class Mediator
   end
 end
 
-# Базовий компонент, що взаємодіє з посередником
 class Component
   attr_accessor :mediator
 
@@ -35,7 +33,6 @@ class Component
   end
 end
 
-# Використання
 mediator = Mediator.new
 
 component1 = Component.new("Компонент 1")
